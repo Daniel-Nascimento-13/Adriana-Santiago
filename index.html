@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adriana Santiago Multimarcas</title>
+  <meta name="description" content="Há quase 20 anos vestindo mulheres com elegância, sofisticação e personalidade. Moda feminina, moda festa e multimarcas com atendimento personalizado."/>
+
+
+ <!-- ==========================================
+   CONFIG GLOBAIS
+   ========================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+  <!-- ==========================================
+       INTRO — LOGO DE ABERTURA
+
+       LOGO ESTÁTICA NO PRETO POR 2S, DEPOIS
+       DISSOLVE PARA O HERO. SEM ANIMAÇÃO NA LOGO.
+       ========================================== -->
+
+  <div id="intro">
+    <img src="./arquivos/logo.webp" alt="Adriana Santiago Multimarcas" class="intro-logo"/>
+  </div>
+
+
+  <!-- ==========================================
+       CONTEÚDO PRINCIPAL
+       ========================================== -->
+  <div id="main-content">
+
+
+    <!-- ==========================================
+         MENU PRINCIPAL
+         ========================================== -->
+    <header id="navbar">
+
+      <!-- MENU HAMBURGUER -->
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- LOGO ANIMADO -->    
+      <a href="#hero" class="nav-logo" aria-label="Adriana Santiago — início">
+        <img src="./arquivos/logo-icone1.webp" alt="Adriana Santiago Multimarcas" class="nav-icone"/>
+      </a>
+
+      <!-- BOTAO WHATS -->
+      <a href="https://wa.me/+5531999087600" class="nav-wpp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+
+      <!-- LINKS MENU HABURGUER  -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#historia"      class="nav-item">História</a></li>
+          <li><a href="#diferenciais"  class="nav-item">A Loja</a></li>
+          <li><a href="#prova"         class="nav-item">Clientes</a></li>
+          <li><a href="https://wa.me/5500000000000" class="nav-item nav-cta" target="_blank" rel="noopener">Fale conosco</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+
+      <!-- ==========================================
+           SEÇÃO 1 — HERO
+           ========================================== -->
+      <section id="hero">
+        <div class="hero-bg">
+          <video autoplay muted loop playsinline>
+             <source src="./arquivos/video.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- SUBTITULO  -->
+        <div class="hero-content">
+          <div class="eyebrow reveal">
+            <div class="eyebrow-line"></div>
+            <span>Multimarcas</span>
+          </div>
+
+          <!-- TITULO PRINCIPAL  -->
+          <h1 class="hero-title reveal d1">
+            Onde cada mulher<br/>encontra o seu <em>brilho.</em>
+          </h1>
+
+          <!-- FRASE DE FIXACAO  -->
+          <p class="hero-sub reveal d2">
+            Há quase 20 anos vestindo mulheres com elegância, sofisticação e personalidade.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 2 — MANIFESTO E FOTOS LOJA 
+           ========================================== -->
+      <section id="manifesto">
+        <div class="manifesto-texto">
+          <span class="manifesto-aspas reveal">&ldquo;</span>
+
+          <!-- FRASE DE EFEITO  -->
+          <p class="manifesto-frase reveal d1">
+            A moda vai muito além da roupa. É uma expressão de <em>autoestima, presença e confiança.</em>
+          </p>
+        </div>
+
+        <!-- FOTOS  -->
+        <div class="manifesto-img">
+          <div class="slide ativo" style="background-image: url('./arquivos/foto-loja1.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja2.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja3.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja4.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja5.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja6.webp')"></div>
+          <div class="slide"       style="background-image: url('./arquivos/foto-loja7.JPG.webp')"></div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 3 — A HISTÓRIA
+           ========================================== -->
+      <section id="historia" class="grao">
+        <div class="historia-header">
+          <div class="eyebrow reveal">
+            <div class="eyebrow-line"></div>
+            <span>Nossa história</span>
+            <div class="eyebrow-line"></div>
+          </div>
+        </div>
+
+        <div class="historia-track-wrap">
+          <div class="historia-track" id="historiaTrack">
+
+            <!-- SLIDE 1 -->
+            <article class="historia-slide">
+              <span class="historia-num">I</span>
+              <h2 class="historia-titulo">Quase 20 anos<br/>de <em>trajetória.</em></h2>
+              <p class="historia-texto">Há quase duas décadas, Adriana Santiago constrói sua história no universo da moda feminina com dedicação, sensibilidade e paixão por vestir mulheres com elegância e sofisticação.</p>
+            </article>
+
+            <!-- SLIDE 2 -->
+            <article class="historia-slide">
+              <span class="historia-num">II</span>
+              <h2 class="historia-titulo">A <em>fundadora.</em></h2>
+              <p class="historia-texto">Formada em Administração e com especialização voltada à moda, Adriana acredita que vestir-se é uma expressão de autoestima, presença e confiança — e fez disso o coração da marca.</p>
+            </article>
+
+            <!-- SLIDE 3 -->
+            <article class="historia-slide">
+              <span class="historia-num">III</span>
+              <h2 class="historia-titulo">Nosso <em>propósito.</em></h2>
+              <p class="historia-texto">Proporcionar a cada cliente uma experiência especial, onde cada detalhe transmite exclusividade, refinamento e autenticidade. Mais que uma loja — um cuidado.</p>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="historia-dots" id="historiaDots">
+          <div class="historia-dot on"></div>
+          <div class="historia-dot"></div>
+          <div class="historia-dot"></div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 4 — VALORES
+           ========================================== -->
+      <section id="valores">
+        <div class="valores-header">
+          <div class="eyebrow reveal">
+            <div class="eyebrow-line"></div>
+
+            <!-- SUBTITULO  -->
+            <span>O que nos move</span>
+            <div class="eyebrow-line"></div>
+          </div>
+
+          <!-- TITULO PRINCIPAL  -->
+          <h2 class="valores-titulo reveal d1">Pilares que vestem<br/>cada <em>detalhe.</em></h2>
+        </div>
+
+        <!-- PILARES  -->
+        <div class="valores-grid">
+          <div class="valor-card reveal">
+            <span class="valor-num">01</span>
+            <h3>Elegância &amp; Sofisticação</h3>
+            <p>Curadoria e bom gosto em cada peça, do casual ao traje de festa.</p>
+          </div>
+          <div class="valor-card reveal d1">
+            <span class="valor-num">02</span>
+            <h3>Atendimento Personalizado</h3>
+            <p>Excelência no atendimento: ouvimos, entendemos e vestimos você.</p>
+          </div>
+          <div class="valor-card reveal d2">
+            <span class="valor-num">03</span>
+            <h3>Individualidade Feminina</h3>
+            <p>Respeito à essência única de cada mulher e à sua autoestima.</p>
+          </div>
+          <div class="valor-card reveal d3">
+            <span class="valor-num">04</span>
+            <h3>Credibilidade &amp; Confiança</h3>
+            <p>Quase 20 anos de ética, compromisso e relações que duram.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 6 — DIFERENCIAIS / A EXPERIÊNCIA
+           ========================================== -->
+      <section id="diferenciais">
+        <div class="dif-wrap">
+
+          <div class="dif-feature reveal">
+            <img src="./arquivos/foto-loja-aerea1.jpg.webp" alt="Interior da loja Adriana Santiago com lustre de cristal e lounge" loading="lazy"/>
+            <span class="tag">O Espaço</span>
+          </div>
+
+          <div>
+            <div class="dif-header reveal">
+              <div class="eyebrow">
+                <div class="eyebrow-line"></div>
+                <span>Por que aqui</span>
+              </div>
+              <h2 class="dif-titulo">Mais que uma loja.<br/>Uma <em>experiência.</em></h2>
+            </div>
+
+            <div class="dif-lista">
+              <div class="dif-item reveal">
+                <div class="dif-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 8 5 9.5 7 12 9c2.5-2 4-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg>
+                </div>
+                <div>
+                  <h3>Atendimento personalizado</h3>
+                  <p>Cada cliente é recebida com cuidado, escuta e consultoria de estilo.</p>
+                </div>
+              </div>
+
+              <div class="dif-item reveal d1">
+                <div class="dif-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+                </div>
+                <div>
+                  <h3>Curadoria multimarcas</h3>
+                  <p>Seleção de marcas e peças pensadas para diferentes ocasiões e estilos.</p>
+                </div>
+              </div>
+
+              <div class="dif-item reveal d2">
+                <div class="dif-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 19h16M6 19V9a6 6 0 0112 0v10M9 6V3M15 6V3"/></svg>
+                </div>
+                <div>
+                  <h3>Café &amp; conforto</h3>
+                  <p>Um ambiente acolhedor, com lounge e cantinho do café para você relaxar.</p>
+                </div>
+              </div>
+
+              <div class="dif-item reveal d3">
+                <div class="dif-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg>
+                </div>
+                <div>
+                  <h3>Quase 20 anos de referência</h3>
+                  <p>Uma trajetória sólida em moda feminina, construída com confiança.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 7 — PROVA SOCIAL
+           ========================================== -->
+        
+      <section id="prova" class="grao">
+        <div class="prova-header">
+          <div class="eyebrow reveal">
+            <div class="eyebrow-line"></div>
+            <span>Quem veste, recomenda</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 class="prova-titulo reveal d1">Mulheres que se sentem<br/><em>únicas.</em></h2>
+        </div>
+
+        <!-- CARROSSEL DIREITA PARA ESQUERDA -->
+        <div class="prova-row r1">
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <!-- DUPLICATA PARA LOOP -->
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p><span class="depo-nome">— Cliente (???)</span></div>
+        </div>
+
+        <!-- CARROSSEL ESQUERDA PARA DIREITA  -->
+        <div class="prova-row r2">
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <!-- DUPLICATA PARA LOOP -->
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p><span class="depo-nome">— Cliente (???)</span></div>
+        </div>
+
+      </section>
+
+
+      <!-- ==========================================
+           SEÇÃO 8 — CTA FINAL + CONTATO
+           ========================================== -->
+      <section id="cta-final" class="grao">
+        <img src="./arquivos/logo-icone2.webp" alt="Adriana Santiago Multimarcas" class="nav-icone"/>
+        <span class="cta-sub">Multimarcas</span>
+
+        <p class="cta-frase reveal">Venha viver a experiência de se vestir <em>com elegância.</em></p>
+
+        <div class="cta-botoes reveal d1">
+          <a href="https://wa.me/+5531999087600" class="cta-wpp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/adrianasantiagomoda/" class="cta-insta" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+
+        <div class="cta-endereco reveal d2">
+          <strong>Visite a loja</strong>
+          Rua Alberto Torres, nº 536, sala nº 401 - Centro / Lajeado-RS<br/>
+          Seg a Sáb · horário de funcionamento
+        </div>
+
+        <footer class="cta-rodape">
+          <div class="cta-tags">
+            <span>Moda Feminina</span>
+            <div class="dot"></div>
+            <span>Festa</span>
+            <div class="dot"></div>
+            <span>Multimarcas</span>
+            <div class="dot"></div>
+            <span>Atendimento Personalizado</span>
+          </div>
+          <span class="cta-copy">© 2026 Adriana Santiago Multimarcas · Todos os direitos reservados</span>
+        </footer>
+      </section>
+
+    </main>
+
+
+  </div><!-- /MAIN-CONTENT -->
+
+  <script src="main.js"></script>
+</body>
+</html>
