@@ -30,13 +30,9 @@ O fechamento via *WhatsApp* foi mantido como pilar central para *humanizar o pro
 *   **Seção de Autoridade & Tradição:** Bloco de dados (estilo infográfico) consolidando a trajetória sólida e de confiança construída na moda feminina.
 *   **Espaço Experiência:** Destaque para o ambiente físico (Lounge & Café), gerando desejo de visitação para clientes locais (estratégia omnichannel).
 
-## 🛠️ Tecnologias Utilizadas
-
-*   **HTML5:** 
-*   **CSS3:** 
-*   **JavaScript (Vanilla):** 
-
 ---
+
+## 🛠️ Tecnologias Utilizadas
 
 **Tecnologias utilizadas**
 - HTML5
