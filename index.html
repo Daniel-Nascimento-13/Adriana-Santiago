@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,21 +13,19 @@
 </head>
 <body>
 
-
-<!-- ==========================================
-     SEÇÃO 1 — INTRO
-     ========================================== -->
+  <!-- ==========================================
+       SEÇÃO 1 — INTRO
+       ========================================== -->
   <div id="intro">
     <img src="./arquivos/logo.webp" alt="Adriana Santiago Multimarcas" class="intro-logo"/>
   </div>
 
-<!-- CONTEÚDO PRINCIPAL -->
+  <!-- CONTEÚDO PRINCIPAL -->
   <div id="main-content">
 
-
-<!-- ==========================================
-     MENU PRINCIPAL
-     ========================================== -->
+    <!-- ==========================================
+         MENU PRINCIPAL
+         ========================================== -->
     <header id="navbar">
 
       <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
@@ -47,20 +44,21 @@
 
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#historia"      class="nav-item">História</a></li>
-          <li><a href="#diferenciais"  class="nav-item">A Loja</a></li>
+          <li><a href="#historia"     class="nav-item">História</a></li>
+          <li><a href="#diferenciais"  class="nav-item">Loja</a></li>
+          <li><a href="#variedade"     class="nav-item">Estilo</a></li>
           <li><a href="#prova"         class="nav-item">Clientes</a></li>
           <li><a href="https://wa.me/+5531999087600" class="nav-item nav-cta" target="_blank" rel="noopener">Fale conosco</a></li>
         </ul>
       </nav>
 
     </header>
+
     <main>
 
-
-<!-- ==========================================
-     SEÇÃO 2 — HERO
-     ========================================== -->
+      <!-- ==========================================
+           SEÇÃO 2 — HERO
+           ========================================== -->
       <section id="hero">
         <div class="hero-bg">
           <video autoplay muted loop playsinline>
@@ -84,10 +82,9 @@
         </div>
       </section>
 
-
-<!-- ==========================================
-     SEÇÃO 3 — MANIFESTO
-     ========================================== -->
+      <!-- ==========================================
+           SEÇÃO 3 — MANIFESTO
+           ========================================== -->
       <section id="manifesto">
         <div class="manifesto-texto">
           <span class="manifesto-aspas reveal">&ldquo;</span>
@@ -97,10 +94,9 @@
         </div>
       </section>
 
-
-<!-- ==========================================
-     SEÇÃO 4 — NOSSA HISTÓRIA
-     ========================================== -->
+      <!-- ==========================================
+           SEÇÃO 4 — NOSSA HISTÓRIA
+           ========================================== -->
       <section id="historia" class="grao">
         <div class="historia-header">
           <div class="eyebrow reveal">
@@ -113,7 +109,6 @@
         <div class="historia-track-wrap">
           <div class="historia-track" id="historiaTrack">
 
-            <!-- SLIDE I -->
             <article class="historia-slide historia-slide--foto" style="background-image: url('./arquivos/adriana1.webp')">
               <div class="historia-slide-overlay"></div>
               <div class="historia-slide-content">
@@ -122,36 +117,34 @@
                 <p class="historia-texto">Formada em Administração e com especialização voltada à moda, Adriana acredita que vestir-se é uma expressão de autoestima, presença e confiança — e fez disso o coração da marca.</p>
               </div>
             </article>
-             
-            <!-- SLIDE II -->
+
             <article class="historia-slide">
               <span class="historia-num">II</span>
               <h2 class="historia-titulo">Quase 20 anos<br/>de <em>trajetória.</em></h2>
               <p class="historia-texto">Há quase duas décadas, Adriana Santiago constrói sua história no universo da moda feminina com dedicação, sensibilidade e paixão por vestir mulheres com elegância e sofisticação.</p>
             </article>
 
-            <!-- SLIDE III -->
             <article class="historia-slide">
               <span class="historia-num">III</span>
               <h2 class="historia-titulo">Nosso <em>propósito.</em></h2>
-              <p class="historia-texto">Proporcionar a cada cliente uma experiência especial, onde cada detalhe transmits exclusividade, refinamento e autenticidade. Mais que uma loja — um cuidado.</p>
+              <p class="historia-texto">Proporcionar a cada cliente uma experiência especial, onde cada detalhe transmite exclusividade, refinamento e autenticidade. Mais que uma loja — um cuidado.</p>
             </article>
 
           </div>
         </div>
 
-
-<!-- ==========================================
-     SEÇÃO 5 — POR QUE AQUI
-     ========================================== -->
-        <div class="historia-dots" id="historiaDots">
-          <div class="historia-dot on"></div>
-          <div class="historia-dot"></div>
-          <div class="historia-dot"></div>
+        <!-- DOTS -->
+        <div class="historia-dots">
+          <button class="historia-dot on" aria-label="Slide 1"></button>
+          <button class="historia-dot" aria-label="Slide 2"></button>
+          <button class="historia-dot" aria-label="Slide 3"></button>
         </div>
+
       </section>
 
-
+      <!-- ==========================================
+           SEÇÃO 5 — POR QUE AQUI
+           ========================================== -->
       <section id="diferenciais">
         <div class="dif-wrap">
           <div>
@@ -164,78 +157,98 @@
             </div>
 
             <div class="dif-lista">
+
+              <!-- ATENDIMENTO PERSONALIZADO -->
               <div class="dif-item reveal">
                 <div class="dif-ico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 8 5 9.5 7 12 9c2.5-2 4-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="7" r="4"/>
+                    <path d="M6 21v-2a4 4 0 0 1 4-4h1.5"/>
+                    <path d="M18 22l3.35-3.28a2.14 2.14 0 0 0 0-3.07 2.24 2.24 0 0 0-3.13 0l-.22.22-.22-.22a2.24 2.24 0 0 0-3.13 0 2.14 2.14 0 0 0 0 3.07L18 22z"/>
+                  </svg>
                 </div>
                 <div>
                   <h3>Atendimento personalizado</h3>
-                  <p>Cada cliente é recebida com cuidado, escuta e consultoria de estilo.</p>
+                  <p>Sua individualidade importa. Por isso, combinamos um atendimento acolhedor com uma orientação de estilo pensada exclusivamente para você.</p>
                 </div>
               </div>
 
+              <!-- CURADORIA MULTIMARCAS -->
               <div class="dif-item reveal d1">
                 <div class="dif-ico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3.9 17.5 11.3 13a1.2 1.2 0 0 1 1.4 0l7.4 4.5a1.2 1.2 0 0 1-.6 2.5h-15a1.2 1.2 0 0 1-.6-2.5z"/>
+                    <path d="M12 13v-2a2 2 0 1 0-2-2"/>
+                  </svg>
                 </div>
                 <div>
                   <h3>Curadoria multimarcas</h3>
-                  <p>Seleção de marcas e peças pensadas para diferentes ocasiões e estilos.</p>
+                  <p>Roupas e acessórios de marcas consagradas, escolhidos estrategicamente para expressar o seu estilo em toda ocasião.</p>
                 </div>
               </div>
 
+              <!-- CAFÉ & CONFORTO -->
               <div class="dif-item reveal d2">
                 <div class="dif-ico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 19h16M6 19V9a6 6 0 0112 0v10M9 6V3M15 6V3"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 11h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-4z"/>
+                    <path d="M17 12h1.5a2.5 2.5 0 0 1 0 5H17"/>
+                    <path d="M8 3a2.4 2.4 0 0 0-1 2 2.4 2.4 0 0 0 1 2"/>
+                    <path d="M12 3a2.4 2.4 0 0 0-1 2 2.4 2.4 0 0 0 1 2"/>
+                  </svg>
                 </div>
                 <div>
                   <h3>Café &amp; conforto</h3>
-                  <p>Um ambiente acolhedor, com lounge e cantinho do café para você relaxar.</p>
+                  <p>Um ambiente acolhedor com lounge integrado e um café sempre fresco, feito para você relaxar e aproveitar a experiência.</p>
                 </div>
               </div>
 
+              <!-- QUASE 20 ANOS DE REFERÊNCIA -->
               <div class="dif-item reveal d3">
                 <div class="dif-ico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="9" r="6"/>
+                    <path d="M12 15l3.4 5.9 1.6-3.24 3.6.24-3.4-5.9"/>
+                    <path d="M6.8 12l-3.4 5.9 3.6-.24L8.6 21l3.4-5.9"/>
+                  </svg>
                 </div>
                 <div>
                   <h3>Quase 20 anos de referência</h3>
-                  <p>Uma trajetória sólida em moda feminina, construída com confiança.</p>
+                  <p>Uma trajetória sólida na moda feminina, construída passo a passo através de laços de confiança e paixão pelo que fazemos.</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ==========================================
+           SEÇÃO 6 — CARROSSEL DE MARCAS
+           ========================================== -->
+      <section id="marcas-mini">
+        <div class="marcas-mini-track">
+          <!-- CONJUNTO A (REAL — REPETIDO ATÉ PREENCHER A LARGURA) -->
+          <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
+          <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
+          <div class="logo-texto-marca">Moda<br/><em>Mineira</em></div>
+          <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
+          <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
+          <div class="logo-texto-marca">Moda<br/><em>Mineira</em></div>
 
-<!-- ==========================================
-     SEÇÃO 6 — CARROSSEL DE MARCAS
-     ========================================== -->
-<section id="marcas-mini">
-  <div class="marcas-mini-track">
-    <!-- CONJUNTO A (REAL — REPETIDO ATÉ PREENCHER A LARGURA) -->
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
+          <!-- CONJUNTO B (ESPELHO IDÊNTICO PARA O LOOP) -->
+          <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
+          <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
+          <div class="logo-texto-marca">Moda<br/><em>Mineira</em></div>
+          <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
+          <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
+          <div class="logo-texto-marca">Moda<br/><em>Mineira</em></div>
+        </div>
+      </section>
 
-    <!-- CONJUNTO B (ESPELHO IDÊNTICO PARA O LOOP) -->
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
-    <img src="./arquivos/marca-dudalina.webp" alt="Dudalina" class="logo-dudalina">
-    <img src="./arquivos/marca-carmensteffens.webp" alt="Carmen Steffens" class="logo-carmen">
-  </div>
-</section>
-
-
-<!-- ==========================================
-     SEÇÃO 7 — A LOJA
-     ========================================== -->
+      <!-- ==========================================
+           SEÇÃO 7 — A LOJA
+           ========================================== -->
       <section id="loja">
         <div class="loja-img">
           <div class="slide ativo" style="background-image: url('./arquivos/foto-loja1.webp')"></div>
@@ -248,10 +261,131 @@
         </div>
       </section>
 
+      <!-- ==========================================
+           SEÇÃO 8 — VARIEDADE (CATEGORIAS)
+           ========================================== -->
+      <section id="variedade" class="grao">
+        <div class="variedade-header">
+          <div class="eyebrow reveal">
+            <div class="eyebrow-line"></div>
+            <span>Muito além da roupa</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 class="variedade-titulo reveal d1">Tudo para compor<br/>o seu <em>look completo.</em></h2>
+          <p class="variedade-sub reveal d2">
+            Bolsas, calçados, joias e acessórios essenciais para complementar seu estilo com elegância e versatilidade.
+          </p>
+        </div>
 
-<!-- ==========================================
-     SEÇÃO 8 — QUEM VESTE, RECOMENDA
-     ========================================== -->
+        <div class="var-stack" id="varStack">
+
+          <!-- BOLSAS -->
+          <article class="var-card" id="vc-1" data-idx="0" onclick="varClicar(1)">
+            <div class="var-slides">
+              <div class="var-slide ativo" style="background-image:url('./arquivos/foto-bolsa1.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa2.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa3.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa4.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa5.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa6.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa7.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa8.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-bolsa9.webp')"></div>
+            </div>
+            <div class="var-overlay"></div>
+            <div class="var-info">
+              <span class="var-num">01</span>
+              <h3 class="var-titulo">Bolsas</h3>
+              <p class="var-texto">Do casual ao sofisticado.</p>
+              <span class="var-counter" id="vc-1-counter">1 / 8</span>
+            </div>
+          </article>
+
+          <!-- CALÇADOS -->
+          <article class="var-card" id="vc-2" data-idx="0" onclick="varClicar(2)">
+            <div class="var-slides">
+              <div class="var-slide ativo" style="background-image:url('./arquivos/foto-calcado1.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado2.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado3.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado4.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado5.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado6.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado7.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado8.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado9.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado10.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado11.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado12.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado13.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado14.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado15.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado16.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado17.webp')"></div>
+              <div class="var-slide" style="background-image:url('./arquivos/foto-calcado18.webp')"></div>
+            </div>
+            <div class="var-overlay"></div>
+            <div class="var-info">
+              <span class="var-num">02</span>
+              <h3 class="var-titulo">Calçados</h3>
+              <p class="var-texto">Conforto e elegância para cada ocasião</p>
+              <span class="var-counter" id="vc-2-counter">1 / 18</span>
+            </div>
+          </article>
+
+          <!-- LOOK COMPLETO -->
+          <article class="var-card" id="vc-3" data-idx="0" onclick="varClicar(3)">
+            <div class="var-slides">
+              <div class="var-slide ativo" style="background-image:url('./arquivos/foto-look1.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look2.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look3.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look4.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look5.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look6.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look7.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look8.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look9.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look10.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look11.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look12.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look13.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look14.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look15.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look16.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look17.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look18.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look19.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look20.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look21.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look22.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look23.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look24.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look25.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look26.webp')"></div>
+              <div class="var-slide"       style="background-image:url('./arquivos/foto-look27.webp')"></div>
+            </div>
+            <div class="var-overlay"></div>
+            <div class="var-info">
+              <span class="var-num">03</span>
+              <h3 class="var-titulo">Look completo</h3>
+              <p class="var-texto">Da roupa às joias — dos pés à cabeça</p>
+              <span class="var-counter" id="vc-3-counter">1 / 27</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="var-dica">
+          <span class="var-dica-dot"></span>
+          <span class="var-dica-dot"></span>
+          <span class="var-dica-dot"></span>
+          <span class="var-dica-txt">toque para ver</span>
+        </div>
+
+      </section>
+
+      <!-- ==========================================
+           SEÇÃO 9 — QUEM VESTE, RECOMENDA
+           ========================================== -->
       <section id="prova" class="grao">
         <div class="prova-header">
           <div class="eyebrow reveal">
@@ -264,54 +398,89 @@
 
         <!-- LINHA 1: SCROLL ESQUERDA -->
         <div class="prova-row r1">
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Saí da loja me sentindo outra pessoa. Atendimento impecável.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Achei o vestido perfeito para a festa. Sofisticação em cada detalhe.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>O cuidado com cada cliente faz toda a diferença. Virei fã.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Ambiente lindo, peças incríveis e um café para coroar.</p></div>
         </div>
 
         <!-- LINHA 2: SCROLL DIREITA -->
         <div class="prova-row r2">
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p><span class="depo-nome">— Cliente (???)</span></div>
-          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p><span class="depo-nome">— Cliente (???)</span></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Elegância que combina com quem eu sou. Recomendo demais.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Me senti acolhida do início ao fim. Experiência única.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>A Adriana entende exatamente o que cada mulher precisa.</p></div>
+          <div class="depo-card"><div class="estrelas">★★★★★</div><p>Voltei várias vezes — e sempre saio encantada.</p></div>
         </div>
       </section>
 
-
-<!-- ==========================================
-       SEÇÃO 9 — CTA FINAL + CONTATO
-       ========================================== -->
+      <!-- ==========================================
+           SEÇÃO 10 — CTA FINAL + CONTATO
+           ========================================== -->
       <section id="cta-final" class="grao">
-        <img src="./arquivos/logo-icone2.webp" alt="Adriana Santiago Multimarcas" class="nav-icone"/>
-        <span class="cta-sub">Multimarcas</span>
 
-        <p class="cta-frase reveal">Venha viver a experiência de se vestir <em>com elegância.</em></p>
+        <div class="cta-chuva" aria-hidden="true" id="ctaChuva"></div>
 
-        <div class="cta-botoes reveal d1">
+        <div class="cta-anos">
+          <div class="cta-anos-line"></div>
+          <span>Quase 20 anos</span>
+          <div class="cta-anos-line"></div>
+        </div>
+
+        <img src="./arquivos/logo-icone2.webp" alt="Adriana Santiago Multimarcas" class="cta-logo-icone"/>
+
+        <p class="cta-frase reveal">Uma história construída<br/>com <em>elegância.</em></p>
+
+        <p class="cta-sub reveal d1">Referência em moda feminina em Lajeado,<br/>há quase duas décadas.</p>
+
+        <div class="cta-numeros reveal d2">
+          <div class="cta-num-item">
+            <span class="cta-num-val">20</span>
+            <span class="cta-num-txt">Anos</span>
+          </div>
+          <div class="cta-num-item">
+            <div class="cta-num-infinito">
+              <svg viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%"   stop-color="#D8B978"/>
+                    <stop offset="50%"  stop-color="#B0894F"/>
+                    <stop offset="100%" stop-color="#8A6530"/>
+                  </linearGradient>
+                </defs>
+                <path d="M15 15 C15 8, 22 4, 30 15 C38 26, 45 22, 45 15 C45 8, 38 4, 30 15 C22 26, 15 22, 15 15 Z" stroke="url(#goldGrad)" stroke-width="2.5" fill="none"/>
+              </svg>
+            </div>
+            <span class="cta-num-txt">Clientes</span>
+          </div>
+          <div class="cta-num-item">
+            <span class="cta-num-val">100%</span>
+            <span class="cta-num-txt">Dedicação</span>
+          </div>
+        </div>
+
+        <div class="cta-botoes reveal d3">
           <a href="https://wa.me/+5531999087600" class="cta-wpp" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp
+            Falar no WhatsApp
           </a>
           <a href="https://www.instagram.com/adrianasantiagomoda/" class="cta-insta" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            Instagram
+            Ver no Instagram
           </a>
         </div>
 
-        <div class="cta-endereco reveal d2">
+        <div class="cta-endereco reveal d3">
           <strong>Visite a loja</strong>
-          Rua Alberto Torres, nº 536, sala nº 401 - Centro / Lajeado-RS<br/>
-          Seg a Sex · 10h as 19h - Sáb · 09h as 13h 
+          Rua Alberto Torres, nº 536, sala nº 401 · Centro / Lajeado–RS<br/>
+          Seg a Sex · 10h às 19h · Sáb · 09h às 13h
         </div>
 
         <footer class="cta-rodape">
@@ -323,8 +492,8 @@
           </div>
           <span class="cta-copy">© 2026 Adriana Santiago Multimarcas · Todos os direitos reservados</span>
         </footer>
-      </section>
 
+      </section>
 
     </main>
   </div>

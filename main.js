@@ -1,4 +1,3 @@
-
 /* ==========================================
    ADRIANA SANTIAGO MULTIMARCAS — LÓGICA
    ========================================== */
@@ -26,7 +25,7 @@
      LOGO ESTÁTICA POR 2S E DISSOLVE PARA O HERO.
      RESPEITA PREFERS-REDUCED-MOTION.
      ========================================== */
-    
+
   let revealed = false;
   const DURACAO_INTRO = 2000;
 
@@ -92,6 +91,11 @@
     const aberto = navLinks.classList.toggle('open');
     hamburger.classList.toggle('open', aberto);
     hamburger.setAttribute('aria-expanded', aberto);
+
+    if (aberto) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
     document.body.style.overflow = aberto ? 'hidden' : '';
   });
 
@@ -138,66 +142,54 @@
     const originalSlides = Array.from(track.children);
     const totalOrig = originalSlides.length;
     const dots = document.querySelectorAll('.historia-dot');
-    
-    let atual = 0; // ÍNDICE BASEADO NOS SLIDES ORIGINAIS (0, 1, 2)
+
+    let atual = 0;
     let timer;
     let emTransicao = false;
 
-    // 1. CRIAÇÃO DOS CLONES PARA O LOOP PERFEITO
     const primeiroClone = originalSlides[0].cloneNode(true);
     const ultimoClone = originalSlides[totalOrig - 1].cloneNode(true);
 
-    // INJETA OS CLONES NAS EXTREMIDADES DO TRACK
     track.appendChild(primeiroClone);
     track.insertBefore(ultimoClone, track.firstElementChild);
 
     const todosSlides = Array.from(track.children);
-    const totalElementos = todosSlides.length; // 5 ELEMENTOS NO TOTAL
+    const totalElementos = todosSlides.length;
 
-    // 2. AJUSTE DINÂMICO DAS LARGURAS
     track.style.width = (totalElementos * 100) + '%';
-    todosSlides.forEach(function (s) { 
-      s.style.width = (100 / totalElementos) + '%'; 
+    todosSlides.forEach(function (s) {
+      s.style.width = (100 / totalElementos) + '%';
     });
 
-    // CURVA DE ANIMAÇÃO REFINADA (PREMIUM TIMING) PARA O DESLIZAMENTO
     const TIMING_TRANSICAO = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
 
-    // 3. FUNÇÃO DE MOVIMENTAÇÃO PRINCIPAL
     function moverPara(idx, comTransicao) {
       atual = idx;
-      
+
       if (comTransicao) {
         track.style.transition = TIMING_TRANSICAO;
       } else {
         track.style.transition = 'none';
       }
 
-      // O DESLOCAMENTO REAL SOMA +1 PARA PULAR O "ULTIMOCLONE" QUE ESTÁ NA POSIÇÃO 0
       track.style.transform = 'translateX(-' + ((atual + 1) * (100 / totalElementos)) + '%)';
 
-      // ATUALIZA OS DOTS SIMULANDO O COMPORTAMENTO CIRCULAR
       let dotAtivo = (atual + totalOrig) % totalOrig;
-      dots.forEach(function (d, i) { 
-        d.classList.toggle('on', i === dotAtivo); 
+      dots.forEach(function (d, i) {
+        d.classList.toggle('on', i === dotAtivo);
       });
     }
 
-    // 4. RESET INVISÍVEL (O TRUQUE DO LOOP INFINITO)
     track.addEventListener('transitionend', function () {
       emTransicao = false;
 
-      // SE PASSOU DO ÚLTIMO ORIGINAL (ESTÁ VISUALIZANDO O CLONE DO PRIMEIRO)
       if (atual >= totalOrig) {
-        moverPara(0, false); // SALTA INSTANTANEAMENTE PARA O SLIDE 0 REAL (SEM TRANSIÇÃO)
-      }
-      // SE RECUOU PARA ANTES DO PRIMEIRO ORIGINAL (ESTÁ VISUALIZANDO O CLONE DO ÚLTIMO)
-      else if (atual < 0) {
-        moverPara(totalOrig - 1, false); // SALTA INSTANTANEAMENTE PARA O ÚLTIMO SLIDE REAL
+        moverPara(0, false);
+      } else if (atual < 0) {
+        moverPara(totalOrig - 1, false);
       }
     });
 
-    // 5. GERENCIAMENTO DE TEMPO (AUTOPLAY)
     function avancar() {
       if (emTransicao) return;
       emTransicao = true;
@@ -213,7 +205,6 @@
       clearInterval(timer);
     }
 
-    // 6. CLIQUES NOS DOTS
     dots.forEach(function (d, i) {
       d.addEventListener('click', function () {
         if (emTransicao) return;
@@ -223,32 +214,29 @@
       });
     });
 
-    // 7. LÓGICA DE SWIPE TOUCH
     var x0 = null;
-    track.addEventListener('touchstart', function (e) { 
-      x0 = e.touches[0].clientX; 
+    track.addEventListener('touchstart', function (e) {
+      x0 = e.touches[0].clientX;
     }, { passive: true });
 
     track.addEventListener('touchend', function (e) {
       if (x0 === null || emTransicao) return;
       var dx = e.changedTouches[0].clientX - x0;
-      
+
       if (Math.abs(dx) > 45) {
         emTransicao = true;
         if (dx < 0) {
-          moverPara(atual + 1, true); // ARRASTA PARA A ESQUERDA -> AVANÇA
+          moverPara(atual + 1, true);
         } else {
-          moverPara(atual - 1, true); // ARRASTA PARA A DIREITA -> RECUA
+          moverPara(atual - 1, true);
         }
         reiniciarAuto();
       }
       x0 = null;
     }, { passive: true });
 
-    // POSIÇÃO INICIAL (EXIBE O SLIDE 0 REAL, OMITINDO O CLONE INICIAL)
     moverPara(0, false);
 
-    // 8. INTERSECTION OBSERVER (ATIVA APENAS NA TELA)
     const secaoHistoria = document.getElementById('historia');
     if (secaoHistoria && 'IntersectionObserver' in window) {
       const observer = new IntersectionObserver(function (entries) {
@@ -271,7 +259,7 @@
 
 
   /* ==========================================
-     SEÇÃO 5 — POR QUE AQUI (SLIDESHOW KEN BURNS)
+     SEÇÃO 7 — A LOJA (SLIDESHOW KEN BURNS)
      ========================================== */
 
   function initSlideshow() {
@@ -287,6 +275,92 @@
   }
 
   initSlideshow();
+
+
+  /* ==========================================
+     SEÇÃO 8 — VARIEDADE ((CATEGORIAS) CASCATA)
+     ========================================== */
+
+  function initVarStack() {
+    var stack  = document.getElementById('varStack');
+    var cards  = document.querySelectorAll('.var-card');
+    if (!stack || !cards.length) return;
+
+    var idxs = [0, 0, 0];
+
+    function proximoSlide(cardNum) {
+      var card    = document.getElementById('vc-' + cardNum);
+      var slides  = card.querySelectorAll('.var-slide');
+      var total   = slides.length;
+      var atual   = idxs[cardNum - 1];
+      var proximo = (atual + 1) % total;
+
+      // SOBE O ATUAL PARA FRENTE E INICIA O FADE
+      slides[atual].classList.add('saindo');
+      slides[atual].classList.remove('ativo');
+
+      // PRÓXIMO JÁ VISÍVEL EMBAIXO (SEM TRANSIÇÃO)
+      slides[proximo].classList.add('ativo');
+
+      // REMOVE A CLASSE SAINDO APÓS A TRANSIÇÃO
+      setTimeout(function () {
+        slides[atual].classList.remove('saindo');
+      }, 700);
+
+      idxs[cardNum - 1] = proximo;
+
+      var counter = document.getElementById('vc-' + cardNum + '-counter');
+      if (counter) counter.textContent = (proximo + 1) + ' / ' + total;
+    }
+
+    window.varClicar = function (cardNum) {
+      var card    = document.getElementById('vc-' + cardNum);
+      var jaAtivo = card.classList.contains('ativo');
+
+      if (jaAtivo) {
+        proximoSlide(cardNum);
+      } else {
+        cards.forEach(function (c) { c.classList.remove('ativo'); });
+        card.classList.add('ativo');
+        stack.classList.add('tem-ativo');
+      }
+    };
+
+    document.addEventListener('click', function (e) {
+      if (!stack.contains(e.target)) {
+        cards.forEach(function (c) { c.classList.remove('ativo'); });
+        stack.classList.remove('tem-ativo');
+      }
+    });
+  }
+
+  initVarStack();
+
+
+  /* ==========================================
+     SEÇÃO 10 — CTA FINAL (ESTRELAS PISCANDO)
+     ========================================== */
+
+  function initEstrelas() {
+    var container = document.getElementById('ctaChuva');
+    if (!container) return;
+
+    var simbolos = ['✦', '✧', '⋆', '·', '✶'];
+
+    for (var i = 0; i < 28; i++) {
+      var el = document.createElement('span');
+      el.className   = 'cta-estrela';
+      el.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+      el.style.left              = (Math.random() * 100) + '%';
+      el.style.top               = (Math.random() * 100) + '%';
+      el.style.fontSize          = (Math.random() * 10 + 6) + 'px';
+      el.style.animationDuration = (Math.random() * 2.5 + 1.5) + 's';
+      el.style.animationDelay    = (Math.random() * 5) + 's';
+      container.appendChild(el);
+    }
+  }
+
+  initEstrelas();
 
 
 })();
