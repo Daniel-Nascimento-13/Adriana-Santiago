@@ -884,7 +884,7 @@ img, video { display: block; max-width: 100%; }
     max-width: 700px;
   }
 
-  .var-card { width: 55%; height: 500px; }
+  .var-card { width: 55%; height: auto; aspect-ratio: 3 / 4; }
 
   .var-card:nth-child(1) { left: 0; top: 0; }
   .var-card:nth-child(2) { left: 22%; top: 40px; }
@@ -1421,7 +1421,6 @@ img, video { display: block; max-width: 100%; }
   .dif-feature { margin-bottom: 0; aspect-ratio: 3/4; }
 }
 
-.var-card { width: 55%; height: auto; aspect-ratio: 3 / 4; }
 
 
 /* ==========================================
