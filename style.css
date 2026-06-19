@@ -740,7 +740,7 @@ img, video { display: block; max-width: 100%; }
 /* STACK */
 .var-stack {
   position: relative;
-  height: 520px;
+  aspect-ratio: 10 / 11;
   margin: 0 var(--px);
 }
 
