@@ -748,7 +748,8 @@ img, video { display: block; max-width: 100%; }
 .var-card {
   position: absolute;
   width: 68%;
-  height: 420px;
+  height: auto;
+  aspect-ratio: 3 / 4;   /* PROPORÇÃO REAL DAS FOTOS */
   border-radius: 6px;
   overflow: hidden;
   cursor: pointer;
@@ -1419,6 +1420,8 @@ img, video { display: block; max-width: 100%; }
 
   .dif-feature { margin-bottom: 0; aspect-ratio: 3/4; }
 }
+
+.var-card { width: 55%; height: auto; aspect-ratio: 3 / 4; }
 
 
 /* ==========================================
