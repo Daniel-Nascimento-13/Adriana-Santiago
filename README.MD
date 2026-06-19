@@ -10,7 +10,7 @@ A landing page conduz a usuária por uma jornada envolvente: apresenta o conceit
 ---
 
 - **Landing Page / Vitrine Virtual & Consultoria**  
-👉 adrianasantiago.net.br
+👉  https://adrianasantiago.net.br
 
 ---
 
